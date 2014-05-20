@@ -1,0 +1,41 @@
+<div ng-controller="MainCtrl">
+  <div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">Kackie Angular Project DAY TWO</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>Art of The Matter</h1>
+  <p class="lead">
+    <img src="images/grimreapermodel.jpg" alt="I'm The Grim Reaper"><br>
+    Shopping for Your Life
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Let's Go<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <div ng-controller="ArtController as store">
+    
+
+<h4>Art Pieces</h4>
+    <p> {{store.product.name}} </p>
+    <p> {{store.product.price}} </p>
+    <p> {{store.product.description}} </p>
+ 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sint, esse, minima, at magnam aspernatur eveniet nihil vel molestias magni voluptas fugiat illo culpa sed impedit nulla tempora rem corporis.</p>
+
+  <h4>Should Thumbnails Go Here?</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eos, pariatur aliquid consectetur quae ad iure facere dolorum minus quis quasi non labore ullam ipsa omnis doloremque consequatur vel eaque.
+  </p>
+
+  <h4>Should Shopping Cart Go Here?</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, culpa quia qui repellat perspiciatis nihil quasi! Saepe, nostrum eveniet quo fugit aut voluptatibus nisi minima maiores. Quidem in deleniti qui.</p>
+</div>
+
+<div class="footer">
+  <p><span class="glyphicon glyphicon-heart"></span> THEKACKIEPROJECT</p>
+</div>
