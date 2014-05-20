@@ -20,22 +20,27 @@ angular.module('ngDayTwoApp')
 
 		{
 		name: 'Ball of Fire',
-		price: 2000,
+		price: 3000,
 		description: 'This is a Ball of Fire',
 		},
 
 		{
 		name: 'Ball of Fire',
-		price: 2000,
+		price: 4000,
 		description: 'This is a Ball of Fire',
 		},
 
 		{
 		name: 'Ball of Fire',
-		price: 2000,
+		price: 5000,
 		description: 'This is a Ball of Fire',
 		},
-
+		
+		{
+		name: 'Ball of Fire',
+		price: 5000,
+		description: 'This is a Ball of Fire',
+		},
 
 
 	]
