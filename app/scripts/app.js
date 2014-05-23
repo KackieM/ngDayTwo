@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('ngDayTwoApp', [
+  .module('artGalleryApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
