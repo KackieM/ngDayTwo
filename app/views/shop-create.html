@@ -1,3 +1,26 @@
-<input type="text" data-ng-model="post.title">
+<div ng-controller="MainCtrl">
+  <div class="header">
+  	<h1>WORKING ON APP HERE FOR INTEGRATION WITH ARTGALLERYAPP</h1>
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">Kackie Angular Project DAY THREE</h3>
+
+ <input type="text" data-ng-model="post.title">
 <textarea data-ng-model="post.content"></textarea>
-<button data-ng-click="newPost(post)">Create</button>
+<button data-ng-click="newPost(post)">Add To Cart</button>
+
+<div class="jumbotron">
+  <h1>Art of The Matter</h1>
+  <p class="lead">
+    <img src="images/grimreapermodel.jpg" alt="I'm The Grim Reaper"><br>
+    Shopping for Your Life
+  </p>
+  <p><a class="btn btn-default btn-lg active" ng-href="views/shop-create.html">Home<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+</div>
+
+<div class="footer">
+  <p><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</p>
+</div>
