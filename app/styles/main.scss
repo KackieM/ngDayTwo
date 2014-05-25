@@ -17,7 +17,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background: gray;
+    background: black;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -95,7 +95,21 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+.p
 
+{
+    font-style: oblique;
+    color: white;
+    font-size: 30;
+}
+
+.h4
+{
+    font-style: oblique;
+    color: white;
+    font-size: 50px;
+
+}
 
 // This is Where the Art Shop Styling Begins
 
