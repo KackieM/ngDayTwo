@@ -21,16 +21,16 @@ angular
         templateUrl: 'views/productsDetail.html',
         controller: 'PostsCtrl'
       })
-      .when('/newOrder', {
-        templateUrl: 'views/order-create.html',
+      .when('/orderCreate', {
+        templateUrl: 'views/orderCreate.html',
         controller: 'PostsCtrl'
       })
       .when('/summaryOrder', {
-        templateUrl: 'views/order-summary.html',
+        templateUrl: 'views/orderSummary.html',
         controller: 'PostsCtrl'
       })
-      .when('/summaryOrderEdit', {
-        templateUrl: 'views/order-summary-edit.html',
+      .when('/orderSummaryEdit', {
+        templateUrl: 'views/orderSummaryEdit.html',
         controller: 'PostsCtrl'
       })
       .otherwise ({
