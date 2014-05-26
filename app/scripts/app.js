@@ -13,20 +13,24 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/blog', {
-        templateUrl: 'views/shop-list.html',
+      .when('/products', {
+        templateUrl: 'views/products.html',
         controller: 'PostsCtrl'
       })
-      .when('/new', {
-        templateUrl: 'views/shop-create.html',
+      .when('/productsDetail', {
+        templateUrl: 'views/productsDetail.html',
         controller: 'PostsCtrl'
       })
-      .when('/blog:id', {
-        templateUrl: 'views/shop-detail.html',
+      .when('/newOrder', {
+        templateUrl: 'views/order-create.html',
         controller: 'PostsCtrl'
       })
-      .when('/blog/:id/edit', {
-        templateUrl: 'views/shop-editDetail.html',
+      .when('/summaryOrder', {
+        templateUrl: 'views/order-summary.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/summaryOrderEdit', {
+        templateUrl: 'views/order-summary-edit.html',
         controller: 'PostsCtrl'
       })
       .otherwise ({
