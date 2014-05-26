@@ -1,0 +1,46 @@
+<header>
+  
+  <h1 class="pull-left">The Cookie Store</h1>
+
+  <nav class="pull-right">
+    
+    <ul>
+      <li><a href="#/main.html">About</a></li>
+
+      <li><a href="#/about">About</a></li>
+      <li><a href="#/addProduct">Add A Product</a></li>
+
+      <li><a href="#/products">Products</a></li>
+
+      <li><a href="#/cart">Cart</a></li>
+    </ul>
+
+  </nav>
+
+<div class="clear"></div>
+
+</header><!--end header-->
+
+
+<div class="cookieAdder">
+
+<div class="row">
+  <div class="col-md-12">
+
+    <h1>Add a Cookie</h1>
+    <input type="text" ng-model="product.name" placeholder="Cookie Name">
+    <input type="text" ng-model="product.price" placeholder="Price Per Cookie">
+
+    <textarea name="content" id="" cols="30" rows="10" ng-model="product.description" placeholder="Describe The Cookie"></textarea>
+    <button ng-click="createProduct(product)">Add Product</button>
+  </div>
+
+</div>
+
+</div><!--end cookieadder -->
+
+
+
+
+
+<footer></footer>
