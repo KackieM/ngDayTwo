@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('ngDayTwoApp')
+angular.module('App')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+  })
 
   .controller('ArtController', function($scope) {
 	$scope.product = [
