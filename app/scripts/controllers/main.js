@@ -85,5 +85,5 @@ angular.module('ngDayTwoApp')
   		// 	{},
 
   		// ];
-  });
+  );
 
