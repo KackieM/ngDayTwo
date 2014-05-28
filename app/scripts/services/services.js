@@ -1,7 +1,7 @@
 'use strict';
 angular.module('App')
 	.factory('OrderSvc', function($resource) {
-		return $resource('api/collections/kackie5',
+		return $resource('api/collections/kat5',
 			{},
 			{
 				query: { method: 'GET', isArray: true },
@@ -17,6 +17,7 @@ angular.module('App')
 				show: { method: 'GET'},
 				edit: { method: 'PUT'},
 				delete: { method: 'DELETE'}
-			}
-			)
+			})
+
+		
 	});

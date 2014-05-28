@@ -9,7 +9,7 @@ angular.module('App')
     ];
   })
 
-  .controller('ArtController', function($scope) {
+  .controller('ArtCtrl', function($scope) {
 	$scope.product = [
 
 		{
@@ -39,16 +39,11 @@ angular.module('App')
 		{
 		name: 'Ball of Fire',
 		price: 5000,
-		description: 'This is a Ball of Fire',
+		description: 'This is a Ball of Fire'
 		},
 
 
 	]
-
-
-
-
-
 
   		// $scope.whateverYouWant = [
   		// 	{

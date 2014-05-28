@@ -7,7 +7,7 @@ angular
     'ngSanitize',
     'ngRoute'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $scope) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -36,4 +36,6 @@ angular
       .otherwise ({
         redirectTo: '/'
       });
+
+
   });
