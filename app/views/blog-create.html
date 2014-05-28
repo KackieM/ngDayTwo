@@ -1,0 +1,18 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class=""><a ng-href="#/main">Home</a></li>
+    <li><a ng-href="#/about">About</a></li>
+    <li><a ng-href="#/contact">Contact</a></li>
+    <li><a ng-href="#/customerReviews">Client Reviews</a></li>
+  </ul>
+  <h3 class="text-muted">Kackie Angular Project DAY THREE</h3>
+</div>
+<div>
+	<h2>New blog post</h2>
+	<ul>
+		<li><input type="text" data-ng-model="post.title" placeholder="New Post title"></li>
+		<li><textarea data-ng-model="post.content" placeholder="New Post Content"></textarea></li>
+		<li><input type="text" data-ng-model="post.thumb" placeholder="Thumbnail to go with post"></li>
+	</ul>
+<button ng-click="createPost(post)">Create Post</button>
+</div>
