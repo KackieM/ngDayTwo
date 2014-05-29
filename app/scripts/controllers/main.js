@@ -1,75 +1,80 @@
 'use strict';
 
 angular.module('ngArt')
-  .controller('PostsCtrl', function ($scope, $location, PostsSvc) {
+  .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-  $scope.createPost = function () {
-  	$location.path('/new');
+  // $scope.createPost = function () {
+  // 	$location.path('/new');
 
-  };
-  $scope.newPost = function(post) {
-    	PostsSvc.create(post)
-    	$location.path('/blog');
-    };
-    $scope.posts = PostsSvc.query();
-  })
-  .controller('PostCtrl', function($scope, $location, $routeParams, PostSvc) {
+  // };
+  // $scope.newPost = function(post) {
+  //   	PostsSvc.create(post)
+  //   	$location.path('/blog');
+  //   };
+  //   $scope.posts = PostsSvc.query();
+  // })
+  // .controller('ProductsCtrl', function($scope) {
+  // 	$scope.products = PostSvc.show({ id: $routeParams.id });
+  // 	$scope.delete = function() { 
+  // 		PostSvc.delete({ id: $routeParams.id });
+  // 		$location.path('/blog');
+  // 	};
+  // 	$scope.edit = function() {
+  // 		PostSvc.edit($scope.post);
+  // 		$location.path('/blog');
+  // 	};
 
-  	$scope.post = PostSvc.show({ id: $routeParams.id });
-  	$scope.delete = function() { 
-  		PostSvc.delete({ id: $routeParams.id });
-  		$location.path('/blog');
-  	};
-  	$scope.edit = function() {
-  		PostSvc.edit($scope.post);
-  		$location.path('/blog');
-  	};
-
-  angular.module('ngDayTwoApp')
+  angular.module('ngArt')
   .controller('ProductsCtrl', function($scope, $location, $routeParams, OrdersSvc) {
 	$scope.products = [
 
 		{
-		name: 'Ball of Fire',
-		price: 2000,
-		description: 'This is a Ball of Fire',
+		'name': 'Ball of Fire',
+    'image': 'images/balloffiremodel.jpg',
+		'description': 'This is a Ball of Fire',
+    'price' : '2000'
+    'id': '1',
 		},
 
 		{
-		name: 'Ball of Fire',
-		price: 3000,
-		description: 'This is a Ball of Fire',
-		},
-
-		{
-		name: 'Ball of Fire',
-		price: 4000,
-		description: 'This is a Ball of Fire',
-		},
-
-		{
-		name: 'Ball of Fire',
-		price: 5000,
-		description: 'This is a Ball of Fire',
-		},
-		
-		{
-		name: 'Ball of Fire',
-		price: 5000,
-		description: 'This is a Ball of Fire'
-		},
-
+    'name': 'Fiery Umbrella',
+    'image': 'images/fieryumbrellamodel.jpg',
+    'description': 'Burning Umbrella',
+    'price' : '3200'
+    'id': '2',
+    },
+    {
+    'name': 'Kissing the Lipless',
+    'image': 'images/kissingthelipless.jpg',
+    'description': 'Kissing',
+    'price' : '4500'
+    'id': '3',
+    },
+    {
+    'name': 'Lonely Queen',
+    'image': 'images/lonelyqueen.jpg',
+    'description': 'Lonely Queen',
+    'price' : '5500'
+    'id': '4',
+    },
+    {
+    'name': 'Painting the Grass Green',
+    'image': 'images/paintingthegrassgreen.jpg',
+    'description': 'Painting the Grass',
+    'price' : '2500'
+    'id': '5',
+    },
 
 	];
-	$scope.createOrder = function() {
-		$location.path('/new');
-	};
-	$scope.newOrder = function(order)
+	// $scope.createOrder = function() {
+	// 	$location.path('/new');
+	// };
+	// $scope.newOrder = function(order)
 
   		// $scope.whateverYouWant = [
   		// 	{
