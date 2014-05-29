@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngDayTwoApp')
+angular.module('ngArt')
   .controller('PostsCtrl', function ($scope, $location, PostsSvc) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
