@@ -19,21 +19,31 @@
   <p><a class="btn btn-default btn-lg active" ng-href="#/blog">Art Blog<span class="glyphicon glyphicon-eye-open-eye"></span></a></p>
 </div>
 
-<div class="row marketing">
+<div ng-controller="ProductCtrl" class="row marketing">
+
+<ul ng-repeat="product in products">
+  <li><h4>{{product.name}}</h4></li>
+  <li><img ng-src="{{product.image}}"></img</li>
+  <li><p>{{product.description}}</p></li>
+</ul>
+</div>
 
   <h4>ARTIST IN RESIDENCE</h4>
   <img src="images/lonelyqueen.jpg" alt="I'm The Grim Reaper"><br>
  
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sint, esse, minima, at magnam aspernatur eveniet nihil vel molestias magni voluptas fugiat illo culpa sed impedit nulla tempora rem corporis.</p>
+  <br></br>
 
   <h4>Up And Coming</h4>
   <img src="images/fieryumbrellamodel.jpg" alt="I'm The Grim Reaper"><br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eos, pariatur aliquid consectetur quae ad iure facere dolorum minus quis quasi non labore ullam ipsa omnis doloremque consequatur vel eaque.
-  </p>
+  
+  <br></br>
 
   <h4>Sneak Preview @ THEKACKIEPROJECT</h4>
   <img src="images/aftershowernyc.jpg" alt="I'm The Grim Reaper"><br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, culpa quia qui repellat perspiciatis nihil quasi! Saepe, nostrum eveniet quo fugit aut voluptatibus nisi minima maiores. Quidem in deleniti qui.</p>
+  
+  <br></br>
+
+  
 </div>
 
 <div class="footer">
