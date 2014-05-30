@@ -30,23 +30,23 @@ angular
       })
       .when('/products', {
         templateUrl: 'views/products.html',
-        controller: 'PostsCtrl'
+        controller: 'ProductsCtrl'
       })
       .when('/productsDetail', {
         templateUrl: 'views/productsDetail.html',
-        controller: 'PostsCtrl'
+        controller: 'ProductsCtrl'
       })
       .when('/orderCreate', {
         templateUrl: 'views/orderCreate.html',
-        controller: 'PostsCtrl'
+        controller: 'OrdersCtrl'
       })
       .when('/summaryOrder', {
         templateUrl: 'views/orderSummary.html',
-        controller: 'PostsCtrl'
+        controller: 'SummaryCtrl'
       })
       .when('/orderSummaryEdit', {
         templateUrl: 'views/orderSummaryEdit.html',
-        controller: 'PostsCtrl'
+        controller: 'OrdersCtrl'
       })
       .otherwise ({
         redirectTo: '/'
