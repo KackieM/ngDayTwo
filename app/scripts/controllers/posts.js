@@ -1,4 +1,4 @@
-angular.module('myBlog')
+angular.module('ngArt')
 	.controller('PostsCtrl', ['$scope', '$location', 'PostsService', function($scope, $location, PostsService) {
 		$scope.randomness = "hello we are in PostsCtrl!";
 

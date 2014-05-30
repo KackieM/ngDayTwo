@@ -1,4 +1,4 @@
-angular.module('myBlog')
+angular.module('ngArt')
 	.controller('PostCtrl', ['$scope', '$routeParams', '$location', 'PostService', function($scope, $routeParams, $location, PostService) {
 
 		$scope.post = PostService.showPost({ id: $routeParams.id });

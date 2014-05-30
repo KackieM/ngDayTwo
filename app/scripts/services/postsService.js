@@ -1,6 +1,6 @@
-angular.module('myBlog')
+angular.module('ngArt')
 	.factory('PostsService', function($resource){
-		return $resource('http://tiy-fee-rest.herokuapp.com/collections/ngDay3', {},
+		return $resource('https://fieryart.firebaseio.com/', {},
 			{
 				getAllPosts: {
 					method: 'GET',

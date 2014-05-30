@@ -1,2 +1,2 @@
-angular.module('ngDayTwoApp')
+angular.module('ngArt')
 	.fac

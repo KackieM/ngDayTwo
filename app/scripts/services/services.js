@@ -1,7 +1,6 @@
-'use strict';
-angular.module('ngDayTwoApp')
-		.factory('PostsSvc', function($resource) {
-		return $resource('http://tiy-fee-rest.herokuapp.com/collections/ngBlog',
+angular.module('ngArt')
+		.factory('ProductService', function($resource) {
+		return $resource('https://fieryart.firebaseio.com/',
 			{},
 			{
 				query: { method: 'GET', isArray: true },
@@ -9,7 +8,7 @@ angular.module('ngDayTwoApp')
 			});
 	})
 	.factory('PostSvc', function($resource) {
-		return $resource('http://tiy-fee-rest.herokuapp.com/collections/ngBlog/:id',
+		return $resource('https://fieryart.firebaseio.com/',
 			{
 				id: '@_id'
 			},
@@ -25,7 +24,7 @@ angular.module('ngDayTwoApp')
 // Here we go with ArtShop Svcs
 
 	.factory('OrdersSvc', function($resource) {
-		return $resource('api/collections/kat5',
+		return $ref('https://fieryart.firebaseio.com/',
 			{},
 			{
 				query: { method: 'GET', isArray: true },
@@ -33,7 +32,7 @@ angular.module('ngDayTwoApp')
 			});
 	})
 	.factory('PostSvc', function($resource) {
-		return $resource('api/collections/kat5/:id',
+		return $resource('https://fieryart.firebaseio.com',
 			{
 				id: '@_id'
 			},
