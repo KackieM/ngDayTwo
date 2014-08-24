@@ -12,6 +12,18 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/summaryOrder', {
+        templateUrl: 'views/orderSummary.html',
+        controller: 'SummaryCtrl'
+      })
+      .when('/orderSummaryEdit', {
+        templateUrl: 'views/orderSummaryEdit.html',
+        controller: 'OrdersCtrl'
+      })
       .when('/blog', {
         templateUrl: 'views/blog-list.html',
         controller: 'PostsCtrl'
@@ -28,6 +40,30 @@ angular
         templateUrl: 'views/blog-editDetail.html',
         controller: 'PostCtrl'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/customerReviews', {
+        templateUrl: 'views/customerReviews.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/devproducts', {
+        templateUrl: 'views/devproducts.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/orderCreate', {
+        templateUrl: 'views/orderCreate.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/orderSummary', {
+        templateUrl: 'views/orderSummary.html',
+        controller: 'SummaryCtrl'
+      })
+      .when('/orderSummaryEdit', {
+        templateUrl: 'views/orderSummaryEdit.html',
+        controller: 'OrdersCtrl'
+      })
       .when('/products', {
         templateUrl: 'views/products.html',
         controller: 'ProductsCtrl'
@@ -36,18 +72,7 @@ angular
         templateUrl: 'views/productsDetail.html',
         controller: 'ProductsCtrl'
       })
-      .when('/orderCreate', {
-        templateUrl: 'views/orderCreate.html',
-        controller: 'OrdersCtrl'
-      })
-      .when('/summaryOrder', {
-        templateUrl: 'views/orderSummary.html',
-        controller: 'SummaryCtrl'
-      })
-      .when('/orderSummaryEdit', {
-        templateUrl: 'views/orderSummaryEdit.html',
-        controller: 'OrdersCtrl'
-      })
+      
       .otherwise ({
         redirectTo: '/'
       });
